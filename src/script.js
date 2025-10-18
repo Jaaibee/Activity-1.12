@@ -20,15 +20,14 @@ const scene = new THREE.Scene()
  * Textures
  */
 const textureLoader = new THREE.TextureLoader()
-const matcapTexture = textureLoader.load('/static/textures/matcaps/8.png')
+const matcapTexture = textureLoader.load('/static/textures/matcaps/8.png');
 
 /**
  * Fonts
  */
 const fontLoader = new FontLoader()
 
-fontLoader.load(
-    '/fonts/helvetiker_regular.typeface.json',
+fontLoader.load('/static/fonts/helvetiker_regular.typeface.json',
     (font) =>
     {
         // Material
