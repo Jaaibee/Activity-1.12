@@ -1,15 +1,20 @@
 {
-  "name": "ITE-18 Activity 1.12",
+  "name": "coquilla-ite18-activities",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "dev": "vite",
-    "build": "vite build"
+    "deploy": "vercel --prod",
+    "build": "node build.js",
+    "preview": "vite preview",
+    "vercel-build": "node build.js"
+  },
+  "devDependencies": {
+    "fs-extra": "^11.1.1",
+    "vite": "^4.5.0"
   },
   "dependencies": {
-    "vite": "^4.5.14",
-    "three": "^0.148.0",
-    "lil-gui": "^0.17.0"
-}
+    "lil-gui": "^0.21.0"
+  }
 }
